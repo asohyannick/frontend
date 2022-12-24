@@ -36,6 +36,7 @@ Modern,
 Navigator,
 Payment,
 Products,
+Projects,
 ReactSlider,
 ReactWrapper,
 SectionWrapper,
@@ -121,6 +122,7 @@ const RouterDistributor = () => {
       <Route path='/navigator' element={<Navigator/>}/>
       <Route path='/payment' element={<Payment/>}/>
       <Route path='/products' element={<Products/>}/>
+      <Route path='/projects' element={<Projects/>}/>
       <Route path='/reactSlider' element={<ReactSlider/>}/>
       <Route path='/reactWrapper' element={<ReactWrapper/>}/>
       <Route path='/sectionWrapper' element={<SectionWrapper/>}/>

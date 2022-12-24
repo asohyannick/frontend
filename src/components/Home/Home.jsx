@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
       <h1>Start working from here <strong>Home Component file</strong> ..</h1>
+      {/* Components... */}
       <Link to='/spinner'>Spinner Component.</Link>
       <Link to='/animation'>Animation Component.</Link>
       <Link to='/animationCard'>AnimationCard Component.</Link>
@@ -38,6 +39,7 @@ const Home = () => {
       <Link to='/modern'> Modern component.</Link> 
       <Link to='/navigator'>Navigator component.</Link> 
       <Link to='/payment'>payment component.</Link> 
+      <Link to='/projects'>Project Components.</Link>
       <Link to='/products'>Products component.</Link> 
       <Link to='/reactSlider'>reactSlider component.</Link> 
       <Link to='/reactWrapper'> reactWrapper component.</Link> 
@@ -66,6 +68,8 @@ const Home = () => {
       <Link to='/favor'> Favor component.</Link> 
       <Link to='/success'> Success component.</Link> 
       <Link to='/footer'> Footer component.</Link> 
+      {/* Pages... */}
+      <Link to='/accounts'>Account Components.</Link>
     </>
   );
 }
