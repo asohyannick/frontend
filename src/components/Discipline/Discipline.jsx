@@ -5,7 +5,7 @@ const Discipline = () => {
   return (
     <div>
       Discipline
-      <Link to='/'> Go Back to Home</Link>
+      <Link to='/navbar'>nav</Link> 
     </div>
   )
 }

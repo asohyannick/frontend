@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Access = () => {
   return (
     <div>Access
-      <Link to='/'> Go Back to Home</Link>
+      <Link to='/navbar'>nav</Link> 
     </div>
   )
 }

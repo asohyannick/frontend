@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Payment = () => {
   return (
     <div>Payment
-       <Link to='/'> Go Back to Home</Link>
+        <Link to='/navbar'>nav</Link> 
     </div>
   )
 }

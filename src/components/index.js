@@ -61,3 +61,5 @@ export { default as Discipline } from './Discipline/Discipline';
 export { default as Favor } from './Favor/Favor';
 export { default as Success } from './Success/Success';
 export { default as Footer } from './Footer/Footer';
+export { default as Login } from './Login/Login';
+export { default as SignUp} from './SignUp/SignUp';

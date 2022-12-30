@@ -5,7 +5,7 @@ const Accomplishment = () => {
   return (
     <div>
       <h1>God loves you Yannick.</h1>
-      <Link to='/'>Click to get to the home components...</Link>
+      <Link to='/navbar'>nav</Link> 
     </div>
   )
 }

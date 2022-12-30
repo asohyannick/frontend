@@ -64,6 +64,8 @@ Approval,
 Discipline,
 Favor,
 Success,
+SignUp,
+Login,
 Footer,
 } from '../components';
 // All pages  are imported below the components above.
@@ -83,11 +85,23 @@ import {
   Wealth
 } from '../pages';
 const RouterDistributor = () => {
- const [reactRouter, SetReactRouter] = useState(false);
+ const [scrollY, SetScrollY] = useState(0);
+ const checkScroll = () => {
+  SetScrollY(window.pageYOffset)
+ }
+React.useEffect(() => {
+  const watchScrolling = () => {
+    window.addEventListener('scroll', checkScroll);
+  }
+  watchScrolling();
+  return () => {
+    watchScrolling()
+  }
+},[scrollY]);
   return (
     <Routes>
       {/* Components routes  above*/}
-      <Route path='/' element={<Home/>} />
+      <Route path='/' element={<Home scrollY={scrollY} />} />
       <Route path='/spinner' element={<Spinner/>}/>
       <Route path='/navbar' element={<Navbar/>}/>
       <Route path='/accomp' element={<Accomplishment/>} />
@@ -149,6 +163,8 @@ const RouterDistributor = () => {
       <Route path='/discipline' element={<Discipline/>}/>
       <Route path='/favor' element={<Favor/>}/>
       <Route path='/success' element={<Success/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/signUp' element={<SignUp/>}/>
       <Route path='/footer' element={<Footer/>}/>
       {/* Pages routes  beneath*/}
       <Route path='/accounts' element={<Accounts/>}/>
