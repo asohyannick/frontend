@@ -12,8 +12,12 @@ background-size: cover;
 font-family: 'Roboto', sans-serif;
 }
 
-.nav-container {
+.nav-Container {
  display: flex;
+ flex-direction: column;
+ width: 100vw;
+ height: 100vh;
+ outline: none;
 }
 
 .nav-section-container {
@@ -130,6 +134,9 @@ img {
 }
 
 /* This is a new section */
+
+
+
 .navHeader {
   display:inline-block;
   justify-content: center;
@@ -141,8 +148,6 @@ img {
   position: relative;
   color: #fafafa;
   font-size: 2rem;
-  word-spacing:1px;
-  line-height: 1px;
 }
 
 .navTitle {
@@ -438,17 +443,84 @@ img {
 }
 
 @media (min-width:320px)  and (max-width:1200px)  {
-  .navHeader {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #fafafa;
-    font-size: 1rem;
-  }
-  
   .navTitle {
    text-align: center;
    align-items: center;
-   margin: 1rem;
+  }
+  .navContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px;
+  }
+
+  .navTechies {
+    color: #ffffff;
+    padding-top: 28px;
+    overflow: hidden;
+    margin: 1rem;
+  }
+
+  .navNode {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    top: 0;
+    margin:10px;
+    bottom: 0;
+    position: relative;
+    color: #fafafa;
+    font-size: 3rem;
+  }
+
+  .navJSTechies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    background: #2e8b57;
+  }
+
+  .navBtn {
+  width: 25%;
+  padding: 2px;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fafafa;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #800080;
+  border-color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s ease-in-out infinite;
+  }
+
+  .navLastFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .navSimplicity {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:320px)  and (max-width:1200px) {
+  .navApp,.navText, .navJS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

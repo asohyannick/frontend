@@ -45,7 +45,8 @@ import {
 } from 'react-icons/fa';
 const Navbar = ({scrollY}) => {
   return (
-    <article>
+  <>
+    <article className='nav-Container'>
       <nav className='nav-section-container'>
         <ul className='nav-ui'>
 
@@ -103,7 +104,7 @@ const Navbar = ({scrollY}) => {
           </li>
         </ul>
       </nav>
-      <section>
+      <section className='nav-final-section-container'>
         <header className='navHeader'>
           <h4 className='navTitle'>Best Web Design Trends you will love to know about Coding Addict.</h4>
         </header>
@@ -480,6 +481,7 @@ const Navbar = ({scrollY}) => {
         </footer>
       </section>
     </article>
+  </>
   );
 }
 

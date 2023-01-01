@@ -95,7 +95,7 @@ React.useEffect(() => {
   }
   watchScrolling();
   return () => {
-    watchScrolling()
+    watchScrolling();
   }
 },[scrollY]);
   return (
